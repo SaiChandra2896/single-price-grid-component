@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --font-family: "Karla", sans-serif;
+  --cyan: hsl(179, 62%, 43%);
+  --cyan-opacity: rgba(42, 178, 175, 0.8);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 1rem;
+  font-family: var(--font-family);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1100px;
+  background: var(--white);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--light-gray);
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 0.8fr 1fr;
+  width: 65%;
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  /* background-color: red; */
+}
+
+.heading-section {
+  background: var(--white);
+  padding: 2.5rem;
+  width: 95%;
+}
+
+.heading-section > h1 {
+  color: var(--cyan);
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.heading-section > h3 {
+  padding: 1rem 0;
+  color: var(--bright-yellow);
+}
+
+.heading-section > p {
+  color: var(--grayish-blue);
+  line-height: 1.2rem;
+  letter-spacing: 0.5px;
+  padding-bottom: 2rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info .subscription {
+  background: var(--cyan);
+  padding: 2.5rem;
+  color: var(--light-gray);
+}
+
+.info .subscription > h1 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.info .subscription .price {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+}
+
+.info .subscription .price-desc {
+  padding-bottom: 2rem;
+}
+
+.info .subscription .price > span {
+  font-weight: normal;
+  opacity: 100;
+}
+
+.info .subscription > a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  background: var(--bright-yellow);
+  padding: 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info .why {
+  background: var(--cyan-opacity);
+  padding: 2.5rem;
+  color: var(--light-gray);
+}
+
+.info .why > h1 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.info .why p {
+  font-size: 0.85rem;
+  padding: 0.1rem 0;
+}
+
+@media (max-width: 700px) {
+  body {
+    height: auto;
+  }
+  .container {
+    padding: 1rem 0;
+  }
+  .card {
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .heading-section {
+    padding: 2rem;
+  }
+
+  .heading-section > p {
+    padding-bottom: 0;
+  }
+
+  .info {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+}
