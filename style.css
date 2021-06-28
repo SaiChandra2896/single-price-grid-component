@@ -57,7 +57,7 @@ a {
   width: 95%;
 }
 
-.heading-section > h1 {
+.heading-section > h2 {
   color: var(--cyan);
   font-size: 1.9rem;
   font-weight: bold;
@@ -86,7 +86,7 @@ a {
   color: var(--light-gray);
 }
 
-.info .subscription > h1 {
+.info .subscription > h2 {
   font-size: 1.3rem;
   padding-bottom: 1rem;
 }
@@ -122,7 +122,7 @@ a {
   color: var(--light-gray);
 }
 
-.info .why > h1 {
+.info .why > h2 {
   font-size: 1.3rem;
   padding-bottom: 1rem;
 }
